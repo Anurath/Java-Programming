@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Date;
 class Bank
 {
 	public static void main(String[] args)
@@ -69,7 +70,8 @@ class Bank
 								 System.out.print("Enter amount : ");
 								 double deposite = sc.nextDouble();
 								 balance+=deposite;
-								 String depositeStatus = "Deposite : "+deposite+" Current Balance :"+balance;
+								 Date currDate = new Date();
+								 String depositeStatus =currDate+ " Deposite : "+deposite+" Current Balance :"+balance;
 								 for (int a1=0 ;a1<arr.length ; a1++)
 								 {
 									 if (arr[a1]==null)
@@ -113,7 +115,7 @@ class Bank
 										 double withdrawAmount = sc.nextDouble();
 										if (withdrawAmount>balance)
 										{
-											System.out.println("INSUFICIENT FUNDS");
+											System.out.println("INSUFFICIENT FUNDS");
 											continue Loged;
 										}
 										else
@@ -122,7 +124,8 @@ class Bank
 										 System.out.println("Amount debeted.");
 										 System.out.println("Current balace = "+balance);
 										 System.out.println();
-										 String withdrawStatus = "Withdraw : "+withdrawAmount+" Current Balance :"+balance;
+										 Date currDate = new Date();
+										 String withdrawStatus =currDate+ " Withdraw : "+withdrawAmount+" Current Balance :"+balance;
 								         for (int a2=0 ;a2<arr.length ; a2++)
 								         {
 									        if (arr[a2]==null)
@@ -225,6 +228,11 @@ class Bank
 								}
 								break;
 							  }
+							  case 7:
+								{
+									Date currDate = new Date();
+									System.out.println(currDate);
+								}
 						  }
 						}
 					}
