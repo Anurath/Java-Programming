@@ -6,7 +6,8 @@ class Bank
 	{
 		Scanner sc = new Scanner(System.in);
 
-		String[] arr = new String[20];
+		String[] arr = new String[5];
+		int s  = 0; 
 		String username1=null;
 		String password1=null;
 		long phone1 = 0;
@@ -60,7 +61,7 @@ class Bank
 						    System.out.println("3.Withdraw Money");
 						    System.out.println("4.Logout");
 							System.out.println("5.Update Information");
-							System.out.println("6.Transaction History");
+							System.out.println("6.	 History");
 						    System.out.print("Enter option : ");
 						    int opt1= sc.nextInt();
 							switch(opt1)
@@ -72,14 +73,12 @@ class Bank
 								 balance+=deposite;
 								 Date currDate = new Date();
 								 String depositeStatus =currDate+ " Deposite : "+deposite+" Current Balance :"+balance;
-								 for (int a1=0 ;a1<arr.length ; a1++)
+								 if(s>arr.length-1)
 								 {
-									 if (arr[a1]==null)
-									 {
-										arr[a1]=depositeStatus;
-										break;
-									 }
+									s=0;
 								 }
+								 arr[s]=depositeStatus;
+								 s++;
 								 break;
 							   }
 							   case 2:
@@ -126,16 +125,14 @@ class Bank
 										 System.out.println();
 										 Date currDate = new Date();
 										 String withdrawStatus =currDate+ " Withdraw : "+withdrawAmount+" Current Balance :"+balance;
-								         for (int a2=0 ;a2<arr.length ; a2++)
-								         {
-									        if (arr[a2]==null)
-									        {
-										    arr[a2]=withdrawStatus;
-										    break;
-									       }
-								         }
-										 continue Loged;
-										 }
+										if(s>arr.length-1)
+										{
+											s=0;
+										}
+										arr[s]=withdrawStatus;
+										s++;
+										continue Loged;
+										}
 									 }
 									 else
 									 {
