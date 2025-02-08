@@ -104,7 +104,7 @@ class Bank
 							   }
 							   case 3:
 							   {
-								 for (int l=3;i>=1 ; l--)
+								 for (int l=3;l>=1 ; l--)
 								 {
 									 System.out.print("Enter the PIN : ");
 									 String withdrawPIN = sc.next();
