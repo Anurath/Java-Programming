@@ -34,7 +34,11 @@ class EmirpNum
 				}
 			}
 		}
-		if (flag==flag1)
+		if (!flag)
+		{
+			System.out.println("The given number is not Prime.");
+		}
+		else if (flag==flag1)
 		{
 			System.out.println("The given number is Emirp Number.");
 		}

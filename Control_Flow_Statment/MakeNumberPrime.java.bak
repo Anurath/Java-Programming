@@ -10,13 +10,11 @@ class MakeNumberPrime
 		int originalNum=num;
 		int dup = num;
 		for (int i=2;i<num ;i++ )
-		{
 			if (num%i==0)
 			{
 				num++;
 				flag = false;
 			}
-		}
 		if (flag)
 		{
 			System.out.println(num);
@@ -24,28 +22,18 @@ class MakeNumberPrime
 		}
 		int nPrime= num;
 		for (int i=2;i<dup ;i++ )
-		{
 			if (dup%i==0)
-			{
 				dup--;
-			}
-		}
 		int pPrime = dup;
 		int diff1=originalNum-pPrime;
 		int diff2=nPrime-originalNum;
 
 		if (diff1<diff2)
-		{
 			System.out.println(pPrime + " "+ originalNum );
-		}
 		else if (diff1>diff2)
-		{
 			System.out.println(originalNum+ " "+nPrime);
-		}
 		else
-		{
 			System.out.println(pPrime+" " + originalNum+ " " +nPrime);
-		}
 	}
 
 }

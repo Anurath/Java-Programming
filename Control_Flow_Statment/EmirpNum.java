@@ -13,8 +13,8 @@ class EmirpNum
 		{
 			if (num%i==0)
 			{
-				flag=false;
-				break;
+				flag=false;break;
+				
 			}
 		}
 		if (flag)
