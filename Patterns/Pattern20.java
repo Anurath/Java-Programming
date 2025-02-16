@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Pattern19
+class Pattern20
 {
 	public static void main(String[] args)
 	{
@@ -11,13 +11,21 @@ class Pattern19
 			for (int j=0;j<num ;j++ )
 			{
 				if (j<num-i-1)
-				{
-					System.out.print("  ");
-				}
-				else
+			    {
+			    	System.out.print("  ");
+			    }
+			    else
+			    {
+			    	System.out.print(" *");
+			    }
+			}
+			for (int j=1;j<num ;j++ )
+			{
+				if (j<=i)
 				{
 					System.out.print(" *");
 				}
+
 			}
 			System.out.println();
 		}
@@ -26,16 +34,23 @@ class Pattern19
 			for (int j=0;j<num ;j++ )
 			{
 				if (j<i)
-				{
-					System.out.print("  ");
-				}
-				else
+			    {
+			    	System.out.print("  ");
+			    }
+			    else
+			    {
+			    	System.out.print(" *");
+			    }
+			}
+			for (int j=1;j<num ;j++ )
+			{
+				if (j<num-i)
 				{
 					System.out.print(" *");
 				}
+
 			}
 			System.out.println();
 		}
 	}
 }
- 
