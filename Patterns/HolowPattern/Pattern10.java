@@ -1,24 +1,29 @@
-class  Pattern10
+class Pattern10
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
-		int num = 4;
-		char ch = 'a';
-		int n=1;
+		int num= 10;
 		for (int i=0;i<num ;i++ )
 		{
-			for (int j=0;j<=i ;j++ )
+			for (int j=0;j<num ;j++ )
 			{
-				if (i%2==0)
-				{
-					System.out.print(n++ + " ");
-				}
-				else
-				{
-					System.out.print(ch++ +" ");
-				}
-			}
-			System.out.println();
-		}
+				if (i+j==num-1||i==num-1)
+			    {
+			      	System.out.print("* ");
+			    }
+			    else
+			    	System.out.print("  ");
+		    }
+		  for (int j=1;j<num ;j++ )
+		  {
+			  if (i==j||i==num-1)
+			  {
+				  System.out.print("* ");
+			  }
+			  else
+				  System.out.print("  ");
+		  }
+			  System.out.println();
+	    }
 	}
 }
