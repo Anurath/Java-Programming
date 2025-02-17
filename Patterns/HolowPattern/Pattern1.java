@@ -1,16 +1,19 @@
 import java.util.Scanner;
-class Pattern12
+class Pattern1
 {
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the number : ");
 		int num = sc.nextInt();
 		for (int i=0;i<num ;i++ )
 		{
-			for (int j=0;j<=i ;j++)
+			for (int j=0;j<num ;j++ )
 			{
-				System.out.print("* ");
+				if (j<i)
+				{
+					System.out.print("* ");
+				}
+	
 			}
 			System.out.println();
 		}
