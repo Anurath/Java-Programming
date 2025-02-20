@@ -14,4 +14,3 @@ class NumberToBinay
 		System.out.println(bin);
 	}
 }
-
