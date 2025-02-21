@@ -6,22 +6,31 @@ class IncreasingNum
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number : ");
 		int num = sc.nextInt();
-		int cnt=0;
 		boolean flag = true;
-		for (int i=num;i>0 ;i/=10)
-		{
+		int cnt=0;
+		for (int i=num;i>0 ;i/=10 )
 			cnt++;
-		}
 		int[] arr = new int[cnt];
-		for (int i=num;i<arr.length;i/=10)
+		for (int i=num,j=cnt-1;i>0 ;j--,i/=10)
 		{
-			int rem = i%10;
-			System.out.println(rem);
-			arr[i]=rem;
+			arr[j]=(i%10);
 		}
-		for (int i=0;i<arr.length ;i++ )
+		for (int i=cnt-1;i>=1;i--)
 		{
-			System.out.println(arr[i]);
+			if (arr[i]>arr[i-1])
+			{
+				continue;
+			}
+			else
+			{
+				flag = false;
+			}
 		}
+		if (flag)
+		{
+			System.out.println("Increasing Number.");
+		}
+		else
+			System.out.println("Not Increaing Number.");
 	}
 }
