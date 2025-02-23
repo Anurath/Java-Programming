@@ -26,7 +26,7 @@ class QuestionPrime1
 					if (rem==1)
 					{
 						flag2 = false;
-							break;
+						break;
 					}
 					for (int k=2;k<rem ;k++ )
 					{
