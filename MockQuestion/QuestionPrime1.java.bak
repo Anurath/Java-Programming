@@ -23,11 +23,6 @@ class QuestionPrime1
 				for (int j=i;j>0 ;j/=10 )
 				{
 					int rem = j%10;
-					if (rem==1)
-					{
-						flag2 = false;
-							break;
-					}
 					for (int k=2;k<rem ;k++ )
 					{
 						if (rem%k==0)
