@@ -11,11 +11,6 @@ class PrimeUsingMethod
 	public static void prime(int num)
 	{
 		boolean flag = true;
-		if (num==1)
-		{
-			flag = false;
-			break;
-		}
 		for (int i=2;i<num ;i++ )
 		{
 			if (num%i==0)
