@@ -1,0 +1,20 @@
+class Pattern1
+{
+	public static void main(String[] args)
+	{
+		int num = 5;
+		int cnt = 2;
+		for (int i=1;i<=5 ;i++ )
+		{
+			int start=i;
+			int dep=start;
+			for (int j=i;j>=1 ;j-- )
+			{
+				System.out.print(dep--+" ");
+			}
+			start+=cnt;
+			cnt++;
+			System.out.println();
+		}
+	}
+}
