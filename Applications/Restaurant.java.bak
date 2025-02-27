@@ -54,10 +54,14 @@ class Restaurant
 				System.out.println("ATTEMPT LEFT "+ (attempt-1));
 			}
 		}
+		System.out.println("THANK YOU , NEVER VISIT AGAIN.");
+		System.exit(0);
 
 	}
 	public static void homePage()
 	{
-		System.out.println("Home");
+		System.out.println("     HOME PAGE ");
+		System.out.println();
+		
 	}
 }

@@ -39,7 +39,13 @@ class Restaurant
 	}
 	public static void login(Scanner sc)
 	{
-		for (int attempt=3;attempt>=1 ;attempt-- )
+		if(name==null && password==0)
+		{
+			System.out.println("CREATE ACCOUNT FIRST.");
+		}
+		else
+		{
+			for (int attempt=3;attempt>=1 ;attempt-- )
 		{
 			System.out.print("Enter Username : ");
 			String loginUsername = sc.next();
@@ -57,9 +63,12 @@ class Restaurant
 		System.out.println("THANK YOU , NEVER VISIT AGAIN.");
 		System.exit(0);
 
+		}
 	}
 	public static void homePage()
 	{
-		System.out.println("Home");
+		System.out.println("     HOME PAGE ");
+		System.out.println();
+		
 	}
 }
