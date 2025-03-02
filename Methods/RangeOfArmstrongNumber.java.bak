@@ -7,7 +7,7 @@ class RangeOfArmstrongNumber
 		{
 			if (isArmstrong(153))
 			{
-				System.out.println(i);
+				System.out.println("LLJ:L");
 			}
 		}
 	}
