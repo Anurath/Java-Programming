@@ -1,0 +1,19 @@
+class RangeOfPrimeNumber
+{
+	public static void main(String[] args)
+	{
+		System.out.println(isPrime(7));
+	}
+	public static boolean isPrime(int num)
+	{
+		int den=2;
+		for (;den<num ;den++ )
+		{
+			if(num%den==0)
+			{
+				return false;
+			}
+		}
+		return den==num;
+	}
+}
