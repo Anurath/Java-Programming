@@ -1,0 +1,15 @@
+class Demo
+{
+	public static void main(String[] args)
+	{
+		for (int i=1;i<100 ;i++ )
+		{
+			int dem =demo(demo(i));
+			System.out.println(dem);
+		}
+	}
+	public static int demo(int num)
+	{
+		return num*=num;
+	}
+}

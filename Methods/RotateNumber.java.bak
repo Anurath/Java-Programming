@@ -1,0 +1,47 @@
+class RotateNumber
+{
+	public static void main(String[] args)
+	{
+		int num =127;
+		int dup=num;
+		for (int i=dup;i!=0 ;i/=10 )
+		{
+			if (isPrime(num))
+			{
+				System.out.println(rotateNum(num)+" is prime number.");
+			}
+			num=rotateNum(num);
+		}
+	}
+	
+	public static boolean isPrime(int num)
+	{
+		int newNum = rotateNum(num);
+		int den = 2;
+		for (;den<num ;den++ )
+		{
+			if (num%den==0)
+			{
+				return false;
+			}
+		}
+		return den == num;
+	}
+	public static int rotateNum(int num)
+	{
+		int mul = len(num);
+		int lastNum=num%10;
+		num/=10;
+		return lastNum*mul+num;
+	}
+
+	public static int len(int num)
+	{
+		int len = 1;
+		for (int i=num/10;i!=0 ;i/=10 )
+		{
+			len*=10;
+		}
+		return len;
+	}
+}
