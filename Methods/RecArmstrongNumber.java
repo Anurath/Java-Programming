@@ -23,3 +23,4 @@ class RecArmstrongNumber
 		return isArmStrong(num/10,temp,sum);
 	}
 }
+

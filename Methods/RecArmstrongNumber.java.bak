@@ -19,7 +19,7 @@ class RecArmstrongNumber
 		{
 			return sum==temp;
 		}
-		sum+=power(num%10,len(temp),1);
+		sum+=power(num%10,len(temp,0),1);
 		return isArmStrong(num/10,temp,sum);
 	}
 }
