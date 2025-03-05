@@ -4,7 +4,7 @@ class RecPower
 	{
 		System.out.println(power(2,5));
 	}
-	public static int power(base,raise)
+	public static int power(int base,int raise)
 	{
 		if (raise==0)
 		{

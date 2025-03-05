@@ -13,3 +13,4 @@ class RecPower
 		return base*power(base,raise-1);
 	}
 }
+
