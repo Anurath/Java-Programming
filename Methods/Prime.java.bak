@@ -2,7 +2,7 @@ class Prime
 {
 	public static void main(String[] args)
 	{
-		System.out.println(isPrime(23,2));
+		System.out.println(isPrime(2,23));
 	}
 	public static boolean isPrime(int den, int num)
 	{
