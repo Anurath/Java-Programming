@@ -1,0 +1,26 @@
+class StrontioNumber
+{
+	public static void main(String[] args)
+	{
+		for (int i=0;i<10000;i++)
+		{
+			if(isStrontio(i))
+			{
+				System.out.println(i);
+			}
+		}
+	}
+	public static boolean isStrontio(int num)
+	{
+		int n= num*2;
+		n/=10;
+		int tenNum = n%10;
+		n/=10;
+		int centNum=n%10;
+		if (centNum==tenNum)
+		{
+			return true;
+		}
+		return false;
+	}
+}
