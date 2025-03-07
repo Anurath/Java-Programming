@@ -13,7 +13,6 @@ class HCF
 			{
 				return min;
 			}
-			System.out.println(min);
 			min--;
 		}
 	}

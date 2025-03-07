@@ -2,7 +2,7 @@ class HCF
 {
 	public static void main(String[] args)
 	{
-		System.out.println(hcf(130,45));
+		System.out.println(hcf(20,15));
 	}
 	public static int hcf(int n1,int n2)
 	{
