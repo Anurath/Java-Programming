@@ -1,0 +1,31 @@
+class MysteryNumber
+{
+	public static void main(String[] args)
+	{
+		System.out.println(isMystery(122));
+	}
+	public static boolean isMystery(int num)
+	{
+		for (int i=1;i<num ;i++ )
+		{
+			if (add(i)==num)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	public static int add(int num)
+	{
+		return num+rev(num);
+	}
+	public static int rev(int num)
+	{
+		int rev=0;
+		for (int i=num;i!=0 ;i/=10 )
+		{
+			rev=rev*10+(i%10);
+		}
+		return rev;
+	}
+}
