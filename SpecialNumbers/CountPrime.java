@@ -1,0 +1,28 @@
+class CountPrime
+{
+	public static void main(String[] args)
+	{
+		int cnt =0;
+		for (short i=0;i<10 ;i++ )
+		{
+			if (i==0||i==1)
+			{
+				continue;
+			}
+			boolean flag = true;
+			for (short j=2;j<i ; j++)
+			{
+				if (i%j==0)
+				{
+					flag =false;
+					break;
+				}
+			}
+			if (flag)
+			{
+				System.out.println(i);
+				cnt++;
+			}
+		}
+	}
+}
