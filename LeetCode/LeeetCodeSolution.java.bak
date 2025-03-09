@@ -2,7 +2,7 @@ class LeeetCodeSolution
 {
 	public static void main(String[] args)
 	{
-		System.out.println(nextPrimePalindrome(10));
+		System.out.println(nextPrimePalindrome(23));
 	}
 	public static int nextPrimePalindrome(int num)
 	{
