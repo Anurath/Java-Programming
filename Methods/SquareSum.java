@@ -1,0 +1,22 @@
+class SquareSum
+{
+	public static void main(String[] args)
+	{
+		System.out.println(isSquareSum(1));
+	}
+	public static boolean isSquareSum(int num)
+	{
+		for (int i=0;i<=num;i++)
+		{
+			for (int j=0;j<=num;j++ )
+			{
+				if(j*j+i*i==num)
+				{
+					System.out.println(i+"  "+j);
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+}
