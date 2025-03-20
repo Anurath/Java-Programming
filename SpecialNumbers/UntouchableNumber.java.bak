@@ -27,7 +27,7 @@ class UntouchableNumber
 		{
 			if(num%i==0)
 			{
-				if (num==(sum-=i))
+				if (num==sum-i)
 				{
 					return false;
 				}

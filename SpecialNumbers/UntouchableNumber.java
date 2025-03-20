@@ -33,7 +33,6 @@ class UntouchableNumber
 				}
 			}
 		}
-		System.out.println("Lickage");
 		return true;
 	}
 
