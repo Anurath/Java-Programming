@@ -15,7 +15,7 @@ class AnagramString
 				{
 					sCount++;
 				}
-				if(ch=t.charAt(j))
+				if(ch==t.charAt(j))
 				{
 					tCount++;
 				}
