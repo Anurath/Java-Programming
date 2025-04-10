@@ -63,6 +63,4 @@ public class Student {
 			System.out.println("Invalud Credentials");
 		}
 	}
-	
-	
 }
