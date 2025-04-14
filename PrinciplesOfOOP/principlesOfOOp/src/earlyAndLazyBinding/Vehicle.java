@@ -5,7 +5,7 @@ public class Vehicle {
 	double price;
 	double mileage;
 	String type;
-	
+	MusicSystem m;
 	Vehicle(){}
 	
 	Vehicle(String brand,double price,double mileage,String type)
@@ -16,6 +16,11 @@ public class Vehicle {
 		this.type = type;
 	}
 	
+	public void insertMusicSystem(String brand,double price,int maxSound,int warantee)
+	{
+		m = new MusicSystem(brand,price, maxSound,warantee);
+	}
+	 
 	public void displayVehicle()
 	{
 		System.out.println("Brand: "+brand);
