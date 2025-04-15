@@ -1,6 +1,5 @@
 class Festival
 {
-	//method chaining
 	String name;
 	int month;
 	String otherName;
@@ -27,4 +26,3 @@ class Festival
 		return this;
 	}
 }
-
