@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q50{
-	//Q50
     public double myPow(double x, int n) {
         boolean flag = true;
         if(x==-1)
@@ -39,4 +38,3 @@ class LeetCodeSolution_Q50{
 		return flag?pow:1/pow;
     }
 }
-
