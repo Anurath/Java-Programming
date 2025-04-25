@@ -16,6 +16,7 @@ public class Laptop {
 		this.price = price;
 		this.ram = ram;
 		this.rom = rom;
+		System.out.println("From Book Constructor");
 	}
 	public void displayLaptop() {
 		System.out.println("------------Laptop--------------");
