@@ -14,6 +14,7 @@ public class Book {
 		this.author = author;
 		this.price = price;
 		this.pages = pages;
+		System.out.println("Object of Book has been created");
 	}
 	
 	public void displayBook()
