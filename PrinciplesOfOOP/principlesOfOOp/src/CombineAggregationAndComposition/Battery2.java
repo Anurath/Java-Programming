@@ -9,7 +9,7 @@ public class Battery2 {
 	Battery2(){}
 	
 	Battery2(String brand,double price,int hour,double power)
-	{
+	{	
 		this.brand = brand;
 		this.power = power;
 		this.price = price;
@@ -18,6 +18,6 @@ public class Battery2 {
 	
 	public void displayBattery()
 	{
-		System.out.println("Battery: [ Brand: +"+brand+" , Price: "+price+" , Hour: "+hour+" , Power: "+power);
+		System.out.println("Battery: [ Brand: +"+brand+" , Price: "+price+" , Hour: "+hour+" , Power: "+power+"]");
 	}
 }
