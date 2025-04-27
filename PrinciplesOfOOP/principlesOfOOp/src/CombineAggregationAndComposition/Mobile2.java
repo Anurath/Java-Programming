@@ -65,7 +65,7 @@ public class Mobile2 {
 	
 	public void displayMobile()
 	{
-		System.out.println("Mobile: [Brand: "+brand+" , Model: "+model+" ,Price: "+price+" , Color: "+color+);
+		System.out.println("Mobile: [Brand: "+brand+" , Model: "+model+" ,Price: "+price+" , Color: "+color+"]");
 	}
 	
 }
