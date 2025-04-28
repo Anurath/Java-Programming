@@ -5,12 +5,12 @@ public class Mobile2 {
 	private String model;
 	private double price;
 	private String color;
-	Battery2 b = new Battery2("Log",1200,12,5200);
-	Processor2 processor;
+	private Battery2 b = new Battery2("Log",1200,12,5200);
+	private Processor2 processor;
 	
-	Sim2 sim;
-	HeadPhone headPhone;
-	Charger2 charger;
+	private Sim2 sim;
+	private HeadPhone headPhone;
+	private Charger2 charger;
 	
 	Mobile2(){}
 	Mobile2(String brand, String model,double price,String color,Processor2 processor)
@@ -43,6 +43,11 @@ public class Mobile2 {
 		return headPhone;
 	}
 	
+	public Battery2 getBattery()
+	{
+		return b;
+	}
+	
 	
 	//Setter's
 	
@@ -56,8 +61,8 @@ public class Mobile2 {
 		headPhone = new HeadPhone("Boat","Gen",12,1200);
 	}
 	
-	public void insertCharger() {
-		charger = new Charger2("C","Redmi",63);
+	public void insertCharger(String type,String model,double power) {
+		charger = new Charger2(type,model,power);
 	}
 	
 	
