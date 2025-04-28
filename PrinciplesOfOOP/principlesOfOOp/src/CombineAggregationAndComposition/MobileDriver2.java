@@ -9,5 +9,7 @@ public class MobileDriver2 {
 		m1.getProcessor().displayProcessor();
 		m1.getBattery().displayBattery();
 		m1.getCharger().displayCharger();
+		m1.addHeadPhone();
+		m1.getHeadPhone().displayHeadPhone();;
 	}
 }
