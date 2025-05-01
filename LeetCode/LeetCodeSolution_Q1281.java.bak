@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1281{
-	//Q1281
     public int subtractProductAndSum(int n) {
         int sum=0;
         int pro=1;
