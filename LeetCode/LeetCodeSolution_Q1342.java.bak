@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1342{
-	//Q1342
     public int numberOfSteps(int num) {
         short cnt=0;
         while(num!=0)
