@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1480{
-	//Q1480
     public int[] runningSum(int[] nums) {
         int len = nums.length;
         int[] arr = new int[len];
