@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2404{
-	//Q 2404
     public int mostFrequentEven(int[] nums) {
         int res=0;
         int max=0;
