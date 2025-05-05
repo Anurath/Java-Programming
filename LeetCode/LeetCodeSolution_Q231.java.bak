@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q231{
-	//Q 231
     public boolean isPowerOfTwo(int n) {
         if(n<=0)
         {
