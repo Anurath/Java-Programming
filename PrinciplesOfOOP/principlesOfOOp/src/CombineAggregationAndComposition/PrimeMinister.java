@@ -16,6 +16,8 @@ public class PrimeMinister {
 	public void displayPrimeMinister()
 	{
 		System.out.println("-------------Prime Minister Information-----------------");
-		System.out.println("");
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+		System.out.println("Party: "+party);
 	}
 }

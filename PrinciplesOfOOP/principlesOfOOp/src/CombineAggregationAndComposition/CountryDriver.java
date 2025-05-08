@@ -5,5 +5,6 @@ public class CountryDriver {
 	{
 		Country c1 = new Country("India",1947,329898324,1500000000,28,2100000,"Democracy");
 		c1.displayCountry();
+		c1.p.displayPrimeMinister();
 	}
 }
