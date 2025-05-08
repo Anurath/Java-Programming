@@ -13,6 +13,7 @@ public class PrimeMinister {
 		this.age= age;
 		this.party = party;
 	}
+	//helper method
 	public void displayPrimeMinister()
 	{
 		System.out.println("-------------Prime Minister Information-----------------");

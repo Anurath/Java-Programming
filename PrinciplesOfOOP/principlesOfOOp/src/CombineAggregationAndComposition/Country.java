@@ -21,6 +21,12 @@ public class Country {
 		this.states = states;
 		this.military = military;
 	}
+	
+	public void addPM(String name,int age , String party)
+	{
+		p = new PrimeMinister(name,age,party);
+	}
+	
 	public  void displayCountry()
 	{
 		System.out.println("--------------Country Inforamation------------------");
