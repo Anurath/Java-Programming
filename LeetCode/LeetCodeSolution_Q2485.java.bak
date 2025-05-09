@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2485{
-	//Q.2485
     public int pivotInteger(int n) {
         int piv=1;
         int temp=n;
