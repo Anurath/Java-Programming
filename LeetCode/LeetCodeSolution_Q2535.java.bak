@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2535{
-	//Q.2535
     public int differenceOfSum(int[] nums) {
         int digSum=0;
 		int eleSum=0;
