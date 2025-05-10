@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2544{
-	//Q.2544
     public int alternateDigitSum(int n) {
         int sum =0;
 		int len = 0;
