@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2729{
-	//Q.2729
     public boolean isFascinating(int n) {
        String s=""+n;
 		for (byte i=2;i<=3;i++)
