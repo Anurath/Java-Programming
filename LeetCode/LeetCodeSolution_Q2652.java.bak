@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2652{
-	//Q.2652
     public int sumOfMultiples(int n) {
         int sum =0;
         for(short i=1;i<=n;i++)
