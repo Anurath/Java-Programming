@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q268{
-	//Q.268
     public int missingNumber(int[] nums) {
         for(short i=0;i<=nums.length;i++)
         {
