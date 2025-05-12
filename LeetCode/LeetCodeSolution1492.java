@@ -1,4 +1,5 @@
 class LeetCodeSolution1492 {
+	//Q.1492
     public int kthFactor(int n, int k) {
         byte factPos = 0;
         for(short i=1;i<=n;i++)
