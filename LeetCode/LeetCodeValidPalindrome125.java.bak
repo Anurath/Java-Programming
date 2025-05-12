@@ -1,6 +1,6 @@
-class LeetCodeValidPalindrome125
-{
-	String a = s.toLowerCase();
+class Solution {
+    public boolean isPalindrome(String s) {
+         String a = s.toLowerCase();
         boolean flag =true;
         String newStr = "";
         char ch = '\u0000';
@@ -17,4 +17,5 @@ class LeetCodeValidPalindrome125
             return true;
         else
             return false;
+    }
 }
