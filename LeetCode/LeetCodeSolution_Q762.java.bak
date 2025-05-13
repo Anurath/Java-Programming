@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q762{
-	//Q.762
     public int countPrimeSetBits(int left, int right) {
         int res=0;
         for(int i=left;i<=right;i++)
