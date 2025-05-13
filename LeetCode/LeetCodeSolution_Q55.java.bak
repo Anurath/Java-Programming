@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q55{
-	//Q.55
     public boolean canJump(int[] nums) {
        int len = nums.length;
 	   int i=0;
