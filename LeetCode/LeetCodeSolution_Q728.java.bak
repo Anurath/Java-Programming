@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q728 {
-	//Q.728
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> res = new ArrayList<>();
         for(int i = left;i<=right;i++)
