@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3467{
-	//Q.3467
     public int[] transformArray(int[] nums) {
         int len=nums.length-1;
         int inCnt=0;
