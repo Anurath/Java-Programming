@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3438{
-	//Q.3438
     public String findValidPair(String s) {
         String res="";
         for(byte i=0;i<s.length()-1;i++)
