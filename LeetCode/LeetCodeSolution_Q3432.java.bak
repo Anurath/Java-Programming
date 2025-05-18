@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3432{
-	//Q.3432
     public int countPartitions(int[] nums) {
         byte cnt=0;
         for(byte i=0;i<nums.length-1;i++)
