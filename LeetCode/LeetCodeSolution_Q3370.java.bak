@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3370{
-	//Q.3370
     public int smallestNumber(int n) {
 
 		while (n>0)
