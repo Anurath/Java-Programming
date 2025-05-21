@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3280{
-	//Q.3280
     public String convertDateToBinary(String date) {
         byte d=Byte.parseByte(date.substring(8,10));
         byte m=Byte.parseByte(date.substring(5,7));
