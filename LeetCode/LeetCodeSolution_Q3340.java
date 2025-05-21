@@ -1,6 +1,7 @@
 class LeetCodeSolution_Q3340{
 	//Q.3340
     public boolean isBalanced(String num) {
+		//Q.isBalance
         short evenSum=0,oddSum=0;
         for(byte i=0;i<num.length();i++)
         {
