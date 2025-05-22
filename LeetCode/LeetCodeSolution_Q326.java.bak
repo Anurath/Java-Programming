@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q326{
-	//Q.326
     public boolean isPowerOfThree(int n) {
         if(n<=0)
             return false;
