@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2894{
-	//Q.2894
     public int differenceOfSums(int n, int m) {
         int divNum=0;
         int nonDivNum=0;
