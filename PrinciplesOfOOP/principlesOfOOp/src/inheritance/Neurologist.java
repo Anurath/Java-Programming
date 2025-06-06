@@ -3,7 +3,7 @@ package inheritance;
 public class Neurologist extends Doctor{
 	String spl;
 	String organ;
-	Cardiologist(String name,String hospital,String degree,int exp,String spl,String organ)
+	Neurologist(String name,String hospital,String degree,int exp,String spl,String organ)
 	{
 		this.name = name;
 		this.hospital = hospital;
@@ -14,7 +14,7 @@ public class Neurologist extends Doctor{
 		this.organ = organ;
 	}
 	
-	public void displayCardiologist()
+	public void displayNeurologist()
 	{
 		displayDoctor();
 		
