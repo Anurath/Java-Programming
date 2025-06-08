@@ -20,6 +20,7 @@ public class College extends University{
 	
 	public void displayCollege()
 	{
+		displayUniversity();
 		System.out.println("College Name: "+clgName);
 		System.out.println("College Principal: "+principal);
 		System.out.println("College Student Count: "+clgStd);
