@@ -5,18 +5,18 @@ public class University {
 	long uniStd;
 	String vc;
 	int dpCount;
-	int year;
+	int uniYear;
 	String type;
 	
 	University(){}
 	
-	University(String uniName, long uniStd,String vc,int dpCount,int year,String type)
+	University(String uniName, long uniStd,String vc,int dpCount,int uniYear,String type)
 	{
 		this.uniName = uniName;
 		this.uniStd = uniStd;
 		this.vc = vc;
 		this.dpCount = dpCount;
-		this.year = year;
+		this.uniYear = uniYear;
 		this.type = type;
 	}
 	
@@ -26,7 +26,7 @@ public class University {
 		System.out.println("Student Count: "+uniStd);
 		System.out.println("Vice Chancellor: "+vc);
 		System.out.println("Department Count: "+dpCount);
-		System.out.println("Year Of Istablishment: "+year);
+		System.out.println("Year Of Istablishment: "+uniYear);
 		System.out.println("Type Of University: "+type);
 	}
 }
