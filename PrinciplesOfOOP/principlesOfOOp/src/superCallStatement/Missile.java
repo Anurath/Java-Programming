@@ -18,8 +18,9 @@ public class Missile extends Weapon {
 	
 	public void displayMissile()
 	{
+		displayWeapon();
 		System.out.println("Name: "+name);
-		System.out.println("Guidance System: "+);
-		System.out.println("Name: "+name);
+		System.out.println("Guidance System: "+guidSystem);
+		System.out.println("Warhead Type: "+warheadType);
 	}
 }
