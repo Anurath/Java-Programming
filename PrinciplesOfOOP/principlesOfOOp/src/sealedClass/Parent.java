@@ -1,6 +1,6 @@
 package sealedClass;
 
-public sealed class Parent permits child1,child2 {
+public sealed class Parent permits Child1,Child2 {
 	String name = "Raju";
 	int age = 50;
 	
