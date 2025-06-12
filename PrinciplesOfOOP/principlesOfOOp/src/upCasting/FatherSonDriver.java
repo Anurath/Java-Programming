@@ -7,8 +7,8 @@ public class FatherSonDriver {
 		f1.displayFather();
 		
 		
-		Child c1  = (Child)f1;
-		c1.displayChild();
-		c1.displayFather();
+//		Child c1  = (Child)f1;
+//		c1.displayChild();
+//		c1.displayFather();
 	}
 }
