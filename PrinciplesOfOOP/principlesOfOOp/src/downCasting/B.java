@@ -6,3 +6,4 @@ public class B extends A {
 		System.out.println("From B");
 	}
 }
+
