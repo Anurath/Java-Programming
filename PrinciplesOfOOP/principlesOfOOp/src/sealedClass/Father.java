@@ -1,5 +1,8 @@
 package sealedClass;
 
-public class Father {
-
+public sealed class Father permits Son {
+	public void displayFather()
+	{
+		System.out.println("From father class");
+	}
 }
