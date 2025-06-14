@@ -37,4 +37,8 @@ public class Pubg {
 		System.out.println("Went Forward "+steps);
 	}
 	
+	public void stepBackward(int steps)
+	{
+		System.out.println("Went Forward "+steps);
+	}
 }
