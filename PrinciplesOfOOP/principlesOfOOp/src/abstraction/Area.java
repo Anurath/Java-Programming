@@ -1,11 +1,9 @@
 package abstraction;
 
 public abstract class Area {
-	public abstract int addition(int x,int y);
+	public abstract double circle(int r);
 	
-	public abstract int subtraction(int x,int y);
+	public abstract double ractangle(int l,int b);
 	
-	public abstract int multiplication(int x,int y);
-	
-	public 
+	public abstract double square(int s);
 }
