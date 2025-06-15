@@ -65,7 +65,7 @@ public class NumbersImp extends Numbers {
 	
 	public int factor(int num)
 	{
-		int fact = 0;
+		int fact = 1;
 		for(int i=1;i<=num;i++)
 		{
 			fact*=i;
@@ -103,10 +103,9 @@ public class NumbersImp extends Numbers {
 		int sqr  = num*num;
 		while(sqr!=0)
 		{
-			sum+=num%10;
+			sum+=sqr%10;
 			sqr/=10;
 		}
-		
 		return num == sum;
 	}
 	
