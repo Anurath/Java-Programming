@@ -7,5 +7,6 @@ public class AreaDriver {
 		
 		System.out.println(a1.circle(20));
 		System.out.println(a1.ractangle(5,24));
+		System.out.println(a1.square(12));
 	}
 }
