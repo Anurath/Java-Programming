@@ -7,5 +7,5 @@ public abstract class Perimeter {
 	
 	public abstract double square(int s);
 	
-	public abstract circle(int r);
+	public abstract double circle(int r);
 }
