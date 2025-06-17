@@ -15,4 +15,9 @@ public class Country {
 		this.hos = hos;
 		this.states = states;
 	}
+	
+	public String toString()
+	{
+		return "Name: "+name+", Capital: "+capital+", Head of State: "+hos+", States: "+28;
+	}
 }
