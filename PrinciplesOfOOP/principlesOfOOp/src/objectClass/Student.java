@@ -18,6 +18,6 @@ public class Student {
 	
 	public String toString()
 	{
-		System.out.println("From to String method");
+		return "Name: "+name+", College: "+college+", Roll No.: "+rollNo+", Degree: "+degree;
 	}
 }
