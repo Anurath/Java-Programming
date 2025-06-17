@@ -5,7 +5,7 @@ public class NumbersDriver {
 	{
 		Numbers n1 = new NumbersImp();
 		
-		System.out.println(n1.emirp(13));
+		System.out.println(n1.emirp(17));
 	}
 }
 

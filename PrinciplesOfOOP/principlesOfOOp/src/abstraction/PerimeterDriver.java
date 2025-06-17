@@ -5,6 +5,6 @@ public class PerimeterDriver {
 	{
 		Perimeter p1 = new PerimeterImp();
 		
-		System.out.println(p1.ractangle(3, 5));
+		System.out.println(p1.ractangle(3, 5)) ;
 	}
 }
