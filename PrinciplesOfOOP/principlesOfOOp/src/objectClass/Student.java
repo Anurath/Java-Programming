@@ -15,4 +15,9 @@ public class Student {
 		this.rollNo = rollNo;
 		this.degree = degree;
 	}
+	
+	public String toString()
+	{
+		System.out.println("From to String method");
+	}
 }
