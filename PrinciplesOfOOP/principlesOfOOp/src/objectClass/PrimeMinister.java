@@ -18,10 +18,10 @@ public class PrimeMinister {
 		this.tenure = tenure;
 	}
 	
-	public String toString()
-	{
-		return "Name: "+name+",Country: "+country+" ,Age: "+age+" ,Tenure: "+tenure+" ,Party: "+party;
-	}
+//	public String toString()
+//	{
+//		return "Name: "+name+",Country: "+country+" ,Age: "+age+" ,Tenure: "+tenure+" ,Party: "+party;
+//	}
 	
 	public boolean equals(Object o)
 	{
