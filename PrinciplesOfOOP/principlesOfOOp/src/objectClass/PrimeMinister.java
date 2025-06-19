@@ -18,8 +18,20 @@ public class PrimeMinister {
 		this.tenure = tenure;
 	}
 	
-//	public String toString()
-//	{
-//		return "Name: "+name+",Country: "+country+" ,Age: "+age+" ,Tenure: "+tenure+" ,Party: "+party;
-//	}
+	public String toString()
+	{
+		return "Name: "+name+",Country: "+country+" ,Age: "+age+" ,Tenure: "+tenure+" ,Party: "+party;
+	}
+	
+	public boolean equals(Object o)
+	{
+		PrimeMinister p1 = (PrimeMinister)o;
+		
+		if(this.name == p1.name && this.age == p1.age && this.country == p1.country && this.tenure == p1.tenure)
+		{
+			return true;
+		}
+		else
+			return false;
+	}
 }
