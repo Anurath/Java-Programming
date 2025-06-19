@@ -34,4 +34,9 @@ public class PrimeMinister {
 		else
 			return false;
 	}
+	
+	public int hashCode()
+	{
+		return age+tenure+name.hashCode()+country.hashCode()+party.hashCode();
+	}
 }

@@ -8,5 +8,8 @@ public class PrimeMinisterDriver {
 
 		System.out.println(p1.toString());
 		System.out.println(p1.equals(p2));
+		System.out.println(p1.hashCode());
+		System.out.println(p2.hashCode());
+
 	}
 }
