@@ -22,4 +22,29 @@ public class NumberImp implements Numbers {
 		
 		return sum*sum==num;
 	}
+	
+	public int nextPrime(int num)
+	{
+		for(;;)
+		{
+			if(isPrime(num))
+			{
+				return num;
+			}
+			num++;
+		}
+	}
+	
+	@Override
+	public int prevPrimeNumber(int num)
+	{
+		for(;;)
+		{
+			if(isPrime(num))
+			{
+				return num;
+			}
+			num--;
+		}
+	}
 }

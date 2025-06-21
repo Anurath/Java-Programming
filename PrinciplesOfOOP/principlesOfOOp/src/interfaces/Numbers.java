@@ -7,5 +7,5 @@ public interface Numbers {
 	
 	int nextPrime(int num);
 	
-	int prevPrimeNumber();
+	int prevPrimeNumber(int num);
 }
