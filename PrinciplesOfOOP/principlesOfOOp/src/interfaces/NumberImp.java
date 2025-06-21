@@ -1,0 +1,25 @@
+package interfaces;
+
+public class NumberImp implements Numbers {
+	public boolean isPrime(int num)
+	{
+		for(int i=2;i<num;i++)
+		{
+			if(num%i==0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public boolean isTechNumber(int num)
+	{
+		int lh = num/100;
+		int rh = num%100;
+		
+		int sum = lh+rh;
+		
+		return sum*sum==num;
+	}
+}
