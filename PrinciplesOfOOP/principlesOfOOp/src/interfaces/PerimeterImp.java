@@ -25,4 +25,10 @@ public class PerimeterImp implements Perimeter {
 	{
 		return s*4;
 	}
+	
+	@Override
+	public double trapazium(double s1,double s2)
+	{
+		return 2*(s1+s2);
+	}
 }
