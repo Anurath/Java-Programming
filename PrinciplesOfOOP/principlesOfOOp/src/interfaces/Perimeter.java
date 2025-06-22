@@ -1,6 +1,7 @@
 package interfaces;
 
 public interface Perimeter {
+	double PI = 22.0/7.0;
 	double circle(double rad);
 	
 	double ractangle(double l,double b);
