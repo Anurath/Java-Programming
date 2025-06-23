@@ -8,5 +8,7 @@ public class InstragramDriver {
 		i1.post("ram","Hello Kaisa hai!!!");
 		
 		i1.like("Kaju");
+		
+		i1.dm("Ram","I miss you!!!");
 	}
 }

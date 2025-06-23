@@ -7,5 +7,5 @@ public interface Instagram {
 	
 	void comment(String cmt);
 	
-	void dm(String msg);
+	void dm(String name,String msg);
 }

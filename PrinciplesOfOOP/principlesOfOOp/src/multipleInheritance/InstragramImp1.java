@@ -29,7 +29,7 @@ public class InstragramImp1 implements Instagram{
 		System.out.println(cmt);
 	}
 	
-	public void dm(String msg) {
+	public void dm(String name,String msg) {
 		System.out.println(msg);
 	}
 }
