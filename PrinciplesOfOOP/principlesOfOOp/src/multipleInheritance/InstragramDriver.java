@@ -7,6 +7,6 @@ public class InstragramDriver {
 		
 		i1.post("ram","Hello Kaisa hai!!!");
 		
-		i1.like();
+		i1.like("Kaju");
 	}
 }

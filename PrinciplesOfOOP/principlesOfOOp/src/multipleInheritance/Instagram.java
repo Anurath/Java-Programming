@@ -3,7 +3,7 @@ package multipleInheritance;
 public interface Instagram {
 	void post(String name,String ip);
 	
-	void like();
+	void like(String name);
 	
 	void comment(String cmt);
 	

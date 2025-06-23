@@ -18,9 +18,10 @@ public class InstragramImp1 implements Instagram{
 		System.out.println(name);
 	}
 	
-	public void like()
+	public void like(String name)
 	{
 		System.out.println("Liked!");
+		System.out.println(name);
 	}
 	
 	public void comment(String cmt)
