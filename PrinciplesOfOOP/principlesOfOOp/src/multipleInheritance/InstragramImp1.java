@@ -1,6 +1,17 @@
 package multipleInheritance;
 
-public class InstragramImp1 {
+public class InstragramImp1 implements Instagram{
+	
+	String name;
+	String pass;
+	
+	InstragramImp1(){}
+	
+	InstragramImp1(String name,String pass)
+	{
+		this.name = name;
+		this.pass = pass;
+	}
 	public void post(String name,String ip)
 	{
 		System.out.println(ip);
