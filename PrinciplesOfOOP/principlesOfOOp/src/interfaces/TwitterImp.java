@@ -7,8 +7,14 @@ public class TwitterImp implements Twitter {
 		System.out.println("Posted "+name);
 	}
 	
-	public void like()
+	public void like(String name)
 	{
 		System.out.println("Liked!");
+		System.out.println(name);
+	}
+	
+	public void retwite()
+	{
+		System.out.println("Retwited!");
 	}
 }

@@ -3,6 +3,7 @@ package interfaces;
 public interface Twitter {
 	void post(String name,String ip);
 	
-	void like();
+	void like(String name);
 	
+	void retwite();
 }
