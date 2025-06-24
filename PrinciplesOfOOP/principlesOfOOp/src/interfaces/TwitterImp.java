@@ -13,8 +13,9 @@ public class TwitterImp implements Twitter {
 		System.out.println(name);
 	}
 	
-	public void retwite()
+	public void retwite(String name)
 	{
 		System.out.println("Retwited!");
+		System.out.println(name);
 	}
 }

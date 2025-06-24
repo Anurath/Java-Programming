@@ -5,5 +5,5 @@ public interface Twitter {
 	
 	void like(String name);
 	
-	void retwite();
+	void retwite(String name);
 }

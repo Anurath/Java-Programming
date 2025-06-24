@@ -9,6 +9,6 @@ public class TwitterDriver {
 		
 		t1.like("Rani");
 		
-		t1.retwite();
+		t1.retwite("Kaju");
 	}
 }
