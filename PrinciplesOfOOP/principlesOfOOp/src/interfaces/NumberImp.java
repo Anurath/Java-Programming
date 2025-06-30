@@ -48,15 +48,27 @@ public class NumberImp implements Numbers {
 		}
 	}
 	
-	@Override
-	public int fact(int num)
+	@Override 
+	public int factorial(int num)
 	{
-		int fact = 1;
+		int fact  = 1;
 		while(num!=0)
 		{
 			fact*=num;
 			num--;
 		}
 		return fact;
+	}
+	
+	@Override
+	public int sum(int num)
+	{
+		int sum = 0;
+		while(num!=0)
+		{
+			sum+=num;
+			num--;
+		}
+		return sum;
 	}
 }
