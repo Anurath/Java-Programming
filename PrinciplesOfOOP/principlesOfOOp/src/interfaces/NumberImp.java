@@ -49,7 +49,7 @@ public class NumberImp implements Numbers {
 	}
 	
 	@Override
-	public int factorail(int num)
+	public int fact(int num)
 	{
 		int fact = 1;
 		while(num!=0)

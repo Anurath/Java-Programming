@@ -11,5 +11,5 @@ public interface Numbers {
 	
 	int factorial(int num);
 
-	int factorail(int num);
+	int fact(int num);
 }
