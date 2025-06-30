@@ -10,6 +10,6 @@ public interface Perimeter {
 	
 	double square(double s);
 	
-	double double trapazium(double s1,double s2);
+	double trapazium(double s1,double s2);
 	
 }
