@@ -47,4 +47,16 @@ public class NumberImp implements Numbers {
 			num--;
 		}
 	}
+	
+	@Override
+	public int factorail(int num)
+	{
+		int fact = 1;
+		while(num!=0)
+		{
+			fact*=num;
+			num--;
+		}
+		return fact;
+	}
 }

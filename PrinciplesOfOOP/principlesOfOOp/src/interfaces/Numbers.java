@@ -8,4 +8,8 @@ public interface Numbers {
 	int nextPrime(int num);
 	
 	int prevPrimeNumber(int num);
+	
+	int factorial(int num);
+
+	int factorail(int num);
 }
