@@ -1,7 +1,8 @@
 package exceptions;
 
 public class Exception2 {
-
+	
+	
 	public void division(int n,int d)
 	{
 		try {
