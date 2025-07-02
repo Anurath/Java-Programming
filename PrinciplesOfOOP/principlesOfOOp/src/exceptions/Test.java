@@ -22,5 +22,10 @@ public class Test {
 		{
 			System.out.println(e);
 		}
+		
+		finally
+		{
+			System.out.println("From Finally Block.");
+		}
 	}
 }
