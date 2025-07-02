@@ -14,7 +14,7 @@ public class ClassPrivate {
 	public void setAge(int newAge)
 	{
 		age = newAge;
-		System.out.println("Age is been changed!");
+		System.out.println("Age is been changed to "+age+".");
 	}
 	
 	public String getName()
@@ -25,7 +25,7 @@ public class ClassPrivate {
 	public void setName(String newName)
 	{
 		name = newName;
-		System.out.println("Name is changed!");
+		System.out.println("Name is changed to "+name+".");
 	}
 }
 
