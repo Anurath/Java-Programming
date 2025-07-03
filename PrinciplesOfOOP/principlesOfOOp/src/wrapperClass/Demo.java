@@ -13,4 +13,9 @@ public class Demo {
 	double d = 20;
 	
 	boolean flag = false;
+	
+	public static void main(String[] args)
+	{
+		
+	}
 }
