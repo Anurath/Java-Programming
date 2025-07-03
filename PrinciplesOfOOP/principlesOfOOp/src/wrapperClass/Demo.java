@@ -7,4 +7,10 @@ public class Demo {
 	byte b = 20;
 	
 	char ch = 'a';
+	
+	long l = 20;
+	
+	double d = 20;
+	
+	boolean flag = false;
 }
