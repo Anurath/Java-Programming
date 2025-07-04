@@ -9,6 +9,8 @@ public class Test {
 		char ch1 = 'a';
 		char ch2 = 'a';
 		
+		long num1 = 10;
+		long num2 = 10;
 		
 		Integer i1 = new Integer(n1);
 		Integer i2 = new Integer(n2);
@@ -28,5 +30,14 @@ public class Test {
 		System.out.println(c1.toString());
 		System.out.println(c2.toString());
 		
+		System.out.println("----------------------------------");
+		
+		Long l1 = new Long(num1);
+		Long l2 = new Long(num2);
+		
+		System.out.println(l1.equals(l2));
+		System.out.println(l1.toString());
+		System.out.println(l2.toString());
+		System.out.println(l1 == l2);
 	}
 }
