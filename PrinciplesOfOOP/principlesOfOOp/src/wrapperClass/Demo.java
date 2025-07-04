@@ -17,6 +17,17 @@ public class Demo {
 	
 	public static void main(String[] args)
 	{
+		int n1 = 10;
+		Integer i1 = new Integer(n1);
+		
+		Integer i2 = new Integer(n1);
+		
+		System.out.println(i1==i2);
+		
+		System.out.println(i1);
+		System.out.println(i2);
+		
+		System.out.println(i1.equals(i2));
 		
 	}
 }
