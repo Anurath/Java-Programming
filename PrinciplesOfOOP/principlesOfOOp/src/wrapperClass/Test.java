@@ -9,8 +9,9 @@ public class Test {
 		Integer i1 = new Integer(n1);
 		Integer i2 = new Integer(n2);
 		
-		System.out.println(i1.toString());
-		System.out.println(i2.toString());
+		System.out.println(i1.toString()); // toString() used to print the reference but here attribute is printed
+		System.out.println(i2.toString()); // toString() used to print the reference but here attribute is printed
+		
 		System.out.println(i1.equals(i2));
 	}
 }
