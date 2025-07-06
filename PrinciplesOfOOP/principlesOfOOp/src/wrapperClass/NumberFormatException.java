@@ -4,7 +4,7 @@ public class NumberFormatException {
 	
 	public static void main(String[] args)
 	{
-		String s1 = "100sd";
+		String s1 = "khg100ljb";
 		String s2 = "";
 //		byte num1 = Byte.parseByte(num1);  //NumberFormatException
 		
@@ -18,7 +18,7 @@ public class NumberFormatException {
 		
 //		double num6 = Double.parseDouble(s1);  //NumberFormatException
 		
-		char ch = s2.charAt(0);
+//		char ch = s2.charAt(0);  //StringIndexOutOfBoundsException
 		
 	}
 }
