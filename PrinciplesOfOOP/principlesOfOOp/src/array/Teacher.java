@@ -21,6 +21,6 @@ public class Teacher {
 	
 	public String toString()
 	{
-		return "[Name: "+name+", Collage: "+clg+", Subject: "+subject+", Age: "+age+", Phone Number: "+phno;
+		return "[Name: "+name+", Collage: "+clg+", Subject: "+subject+", Age: "+age+", Phone Number: "+phno+"]";
 	}
 }

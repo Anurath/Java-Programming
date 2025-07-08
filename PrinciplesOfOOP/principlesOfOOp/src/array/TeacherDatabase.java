@@ -1,11 +1,14 @@
 package array;
-import java.util.*;
+import java.util.Scanner;
 public class TeacherDatabase {
 
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
-		Teacher[] db = new Teacher[5];
+		System.out.print("Enter Teacher Count: ");
+		int len = sc.nextInt();
+		sc.nextLine();
+		Teacher[] db = new Teacher[len];
 		
 		for(int i=0;i<db.length;i++)
 		{
@@ -17,6 +20,8 @@ public class TeacherDatabase {
 			int age = sc.nextInt();
 			System.out.print("Enter Phone Number: ");
 			long phno = sc.nextLong();
+			sc.nextLine();
+			System.out.print("Enter subject: ");
 			String subject = sc.nextLine();
 			
 			db[i] = new Teacher(name,clg,age,subject,phno);
@@ -35,5 +40,6 @@ public class TeacherDatabase {
 		{
 			System.out.println("Thank you...");
 		}
+		sc.close();
 	}
 }
