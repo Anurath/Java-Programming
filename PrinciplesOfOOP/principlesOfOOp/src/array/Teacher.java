@@ -18,4 +18,9 @@ public class Teacher {
 		this.subject = subject;
 		this.phno = phno;
 	}
+	
+	public String toString()
+	{
+		return "[Name: "+name+", Collage: "+clg+", Subject: "+subject+", Age: "+age+", Phone Number: "+phno;
+	}
 }
