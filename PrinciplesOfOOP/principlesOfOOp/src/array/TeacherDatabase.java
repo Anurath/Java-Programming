@@ -9,19 +9,19 @@ public class TeacherDatabase {
 		
 		for(int i=0;i<db.length;i++)
 		{
-			System.out.println("Enter the name of teacher: ");
+			System.out.print("Enter the name of teacher: ");
 			String name = sc.nextLine();
-			System.out.println("Enter the college name: ");
+			System.out.print("Enter the college name: ");
 			String clg = sc.nextLine();
-			System.out.println("Enter age: ");
+			System.out.print("Enter age: ");
 			int age = sc.nextInt();
-			System.out.println("Enter Phone Number: ");
+			System.out.print("Enter Phone Number: ");
 			long phno = sc.nextLong();
 			String subject = sc.nextLine();
 			
 			db[i] = new Teacher(name,clg,age,subject,phno);
 		}
-		System.out.println("Do you want to see Teacher Information:(Yes-1,No-0)");
+		System.out.print("Do you want to see Teacher Information:(Yes-1,No-0)");
 		int show = sc.nextInt();
 		
 		if(show==1)
