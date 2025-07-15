@@ -1,7 +1,5 @@
 package array;import java.util.Arrays;
 
-import accessModifier.A;
-
 public class RetainOccurance {
 
 	public static int[] retainOccurence(int[]arr,int ele)
