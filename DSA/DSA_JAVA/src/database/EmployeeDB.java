@@ -114,4 +114,171 @@ public class EmployeeDB {
 			}
 		}
 	}
+	
+	public void searchByManageNo(int managerNo)
+	{
+		if(connect)
+		{
+			for(int i=0;i<db.length;i++)
+			{
+				if(db[i]!=null)
+				{
+					if(db[i].managerNo == managerNo)
+					{
+						System.out.println(db[i]);
+					}
+				}
+			}
+		}
+	}
+	
+	public void searchByEqualSalery(double sal)
+	{
+		if(connect)
+		{
+			for(int i=0;i<db.length;i++)
+			{
+				if(db[i]!=null)
+				{
+					if(db[i].sal==sal)
+					{
+						System.out.println(db[i]);
+					}
+				}
+			}
+		}
+	}
+	
+	
+	public void searchByGreaterSalery(double sal)
+	{
+		if(connect)
+		{
+			for(int i=0;i<index;i++)
+			{
+					if(db[i].sal>sal)
+					{
+						System.out.println(db[i]);
+					}
+			}
+		}
+	}
+	
+	public void searchByLessSalery(double sal)
+	{
+		if(connect)
+		{
+			for(int i=0;i<db.length;i++)
+			{
+				if(db[i]!=null)
+				{
+					if(db[i].sal<sal)
+					{
+						System.out.println(db[i]);
+					}
+				}
+			}
+		}
+	}
+	
+	public void searchByWorkingUnderManager(int managerNo)
+	{
+		if(connect)
+		{
+			for(int i=0;i<index;i++)
+			{
+				if(db[i].managerNo == managerNo)
+				{
+					System.out.println(db[i]);
+				}
+			}
+		}
+	}
+	
+	public void searchByNoCommission()
+	{
+		if(connect)
+		{
+			for(int i=0;i<index;i++)
+			{
+				if(db[i].comm== 0)
+				{
+					System.out.println(db[i]);
+				}
+			}
+		}
+	}
+	
+	public void searchByGreatereCommission(double comm)
+	{
+		if(connect)
+		{
+			for(int i=0;i<index;i++)
+			{
+				if(db[i].comm>comm)
+				{
+					System.out.println(db[i]);
+				}
+			}
+		}
+	}
+	
+	public void searchByLesserCommission(double comm)
+	{
+		if(connect)
+		{
+			for(int i=0;i<index;i++)
+			{
+				if(db[i].comm<comm)
+				{
+					System.out.println(db[i]);
+				}
+			}
+		}
+	}
+	
+	public void maxSaleryHolder()
+	{
+		if(connect)
+		{
+			double max = db[0].sal;
+			int idx = 0;
+			for(int i=1;i<index;i++)
+			{
+				if(db[i].sal>max)
+				{
+					max=db[i].sal;
+					idx = i;
+				}
+			}
+			System.out.println(db[idx]);
+		}
+	}
+	
+	public void SecondMaxSaleryHolder()
+	{
+		if(connect)
+		{
+			double max = db[0].sal;
+			int idxMax=0,idxSec = 0;
+			double secMax = max;
+			for(int i=1;i<index;i++)
+			{
+				if(db[i].sal>max)
+				{
+					secMax = max;
+					max=db[i].sal;
+					idxMax = i;
+				}
+				else if(db[i].sal>secMax&& db[i].sal!=max)
+				{
+					secMax = db[i].sal;
+					idxSec = i;
+				}
+			}
+			System.out.print("Maximum Salery Holder Is: "+db[idxMax]);
+			System.out.println("Second Maximum Salery Holder Is: "+db[idxSec]);
+		}
+	}
+	
 }
