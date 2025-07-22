@@ -26,4 +26,9 @@ public class Employee {
 		this.comm = comm;
 		this.job = job;
 	}
+	
+	public String toString()
+	{
+		return "[ Name: "+name+", Employee Id: "+empid+", Department No: "+deptNo+", Manager No: "+managerNo+", Hire Date: "+hireDate+", Salary: "+sal+", Commission: "+comm+", Job: "+job+" ]";
+	}
 }
