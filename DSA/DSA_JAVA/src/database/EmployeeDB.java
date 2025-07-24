@@ -281,7 +281,22 @@ public class EmployeeDB {
 		}
 	}
 	
-	
+	public void sortBy(String attri)
+	{
+		for(int i=0;i<db.length-1;i++)
+		{
+			for(int j=0;j<db.length-1-i;j++)
+			{
+				if(checkSwap(db[j],db[j+1],attri)>0)
+				{
+					Employee temp = db[j];
+					
+					db[j] = db[j+1];
+					db[j+1] = temp;
+				}
+			}
+		}
+	}
 	
 	private int checkSwap(Employee e1,Employee e2,String attri)
 	{
@@ -310,6 +325,10 @@ public class EmployeeDB {
 			case "Job":
 			{
 				return e1.job.compareTo(e2.job);
+			}
+			default:
+			{
+				return -100;
 			}
 			
 		}
