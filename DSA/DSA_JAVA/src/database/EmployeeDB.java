@@ -281,4 +281,67 @@ public class EmployeeDB {
 		}
 	}
 	
+	
+	
+	private int checkSwap(Employee e1,Employee e2,String attri)
+	{
+		switch(attri)
+		{
+			case "EmpId":
+			{
+				return checkSwap0(e1.empid, e2.empid);
+			}
+			case "Salery":
+			{
+				return checkSwap0(e1.sal, e2.sal);
+			}
+			case "managerNo":
+			{
+				return checkSwap0(e1.managerNo, e2.managerNo);
+			}
+			case "deptNo":
+			{
+				return checkSwap0(e1.deptNo, e2.deptNo);
+			}
+			case "Name":
+			{
+				return e1.name.compareTo(e2.name);
+			}
+			case "Job":
+			{
+				return e1.job.compareTo(e2.job);
+			}
+			
+		}
+	}
+	
+	
+	private int checkSwap0(double n1 , double n2)
+	{
+		if(n1>n2)
+		{
+			return 1;
+		}
+		else if(n1<n2)
+		{
+			return -1;
+		}
+		return 0;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
