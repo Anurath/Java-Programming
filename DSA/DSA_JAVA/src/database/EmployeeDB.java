@@ -283,19 +283,26 @@ public class EmployeeDB {
 	
 	public void sortBy(String attri)
 	{
-		for(int i=0;i<db.length-1;i++)
+		if(attri.equals("EmpId")||attri.equals("Salery")||attri.equals("managerNo")||attri.equals("deptNo")||attri.equals("Name")||attri.equals("Job"))
 		{
-			for(int j=0;j<db.length-1-i;j++)
+			for(int i=0;i<count-1;i++)
 			{
-				if(checkSwap(db[j],db[j+1],attri)>0)
+				for(int j=0;j<count-1-i;j++)
 				{
-					Employee temp = db[j];
-					
-					db[j] = db[j+1];
-					db[j+1] = temp;
+					if(checkSwap(db[j],db[j+1],attri)>0)
+					{
+						Employee temp = db[j];
+						
+						db[j] = db[j+1];
+						db[j+1] = temp;
+					}
 				}
 			}
 		}
+		else {
+			System.out.println("Invalid Attribute");
+		}
+		
 	}
 	
 	private int checkSwap(Employee e1,Employee e2,String attri)

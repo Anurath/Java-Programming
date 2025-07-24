@@ -30,5 +30,8 @@ public class EmployeeDBDriver {
 		e1.addEmployee("Varun", 31, 10, 7001, "Clerk", "11/12/2016", 53000, 3800);
 
 		e1.searchByLessSalery(30000);
+		
+		e1.sortBy("Salery");
+		e1.showDB();
 	}
 }
