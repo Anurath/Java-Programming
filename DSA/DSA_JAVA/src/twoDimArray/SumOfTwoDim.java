@@ -7,7 +7,8 @@ public class SumOfTwoDim {
 
 	public static void main(String[] args)
 	{
-		int[][] nums = {{1,2,3,4},{2,3,4,5},{6,7,8,100}};
+		int[][] nums = {{1,2,3},{2,3,4},{6,7,100}};
+		sumUpperLower(nums);
 	}
 	public static void sum(int[][] nums)
 	{
@@ -21,6 +22,7 @@ public class SumOfTwoDim {
 		System.out.println(sum);
 	}
 	
+	//Sum of Diagonal of matrix
 	public static void diagonalSum(int[][] nums)
 	{
 		int sum = 0;
@@ -36,6 +38,8 @@ public class SumOfTwoDim {
 		System.out.println(sum);
 	}
 	
+	
+	//Sum of two 2D arrays
 	public static void sumOfTwoTwoDimArray(int[][] a , int[][]b)
 	{
 		boolean flag = true;
@@ -70,4 +74,30 @@ public class SumOfTwoDim {
 			System.out.println("Arrays are not symmetrical");
 		}
 	}
+	
+	
+	//Sum of upper triangle and lower triangle
+	
+	
+	public static void sumUpperLower(int[][] arr)
+	{
+		int uSum=0,lSum=0;
+		
+		for (int i = 0; i < arr.length; i++) {
+			for(int j=0;j<arr[i].length;j++)
+			{
+				if(i>j)
+				{
+					lSum+=arr[i][j];
+				}
+				if(j>i)
+				{
+					uSum+=arr[i][j];
+				}
+			}
+		}
+		System.out.println(uSum+"  "+lSum);
+	}
+	
+	
 }
