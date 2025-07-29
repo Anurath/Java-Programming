@@ -5,7 +5,7 @@ public class LongestSubSequence {
 	
 	public static void main(String[] args)
 	{
-		int[] arr = {1,2,2,2,2,3,3,4,4,4,4,4,5,5,5,5,5,5,4,4,4,};
+		int[] arr = {1,1,1,1,1,1,1,1};
 		longSubSequence(arr);
 	}
 	
@@ -28,7 +28,11 @@ public class LongestSubSequence {
 				}
 				cnt=0;
 			}
+			if(cnt==arr.length-2)
+			{
+				max=cnt;
+			}
 		}
-		System.out.println(num+" is repeated for "+max+" times.");
+		System.out.println(num+" is repeated for "+(max+1)+" times.");
 	}
 }
