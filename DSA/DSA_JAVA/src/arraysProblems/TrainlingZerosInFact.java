@@ -4,7 +4,9 @@ public class TrainlingZerosInFact {
 
 	public static void main(String[] args)
 	{
-		
+		int num = 5;
+		int fact = factorial(num);
+		System.out.println(trailZeros(fact));;
 	}
 	
 	public static int factorial(int num)
