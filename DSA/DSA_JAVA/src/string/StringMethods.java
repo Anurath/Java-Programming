@@ -72,5 +72,6 @@ public class StringMethods {
 		System.out.println(s2.substring(4));
 		
 		System.out.println(s2.substring(2,4));
+		
 	}
 }
