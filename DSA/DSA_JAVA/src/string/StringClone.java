@@ -6,6 +6,7 @@ public class StringClone {
 		String s1 = "Aditya";
 		String s2 = "aditya";
 		System.out.println(compareTo(s1, s2));
+		System.out.println(endWith("asdfsdf","df"));
 	}
 
 	public int length(String s)
@@ -47,4 +48,27 @@ public class StringClone {
 		
 		return cnt1-cnt2;
 	}
+	
+	public String concat(String s1, String s2)
+	{
+		return s1+s2;
+	}
+	
+	public static boolean endWith(String s,String com)
+	{
+		if(s.length()<com.length())
+		{
+			for(int i=com.length()-1,j=s.length()-1;i>=0;i--)
+			{
+				if(com.charAt(i)!=s.charAt(j))
+				{
+					return false;
+				}
+				j--;
+			}
+			return true;
+		}
+		return false;
+	}
+	
 }
