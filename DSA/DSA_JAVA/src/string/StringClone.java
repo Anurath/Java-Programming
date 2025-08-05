@@ -7,11 +7,13 @@ public class StringClone {
 //		String s2 = "aditya";
 //		System.out.println(compareTo(s1, s2));
 //		System.out.println(endWith("asdfsdf","df"));
+//		
+//		String s1 = "ssass";
+//		String s2 = "as";
+//		
+//		System.out.println(contains(s1,s2));
 		
-		String s1 = "ssass";
-		String s2 = "as";
-		
-		System.out.println(contains(s1,s2));
+		System.out.println(intend("Anurath", 10));
 	}
 
 	public int length(String s)
@@ -84,7 +86,7 @@ public class StringClone {
 		{
 			for(int i=0;i<s1.length();i++)
 			{
-				if(check<s2.length() && s1.charAt(i)==s2.charAt(check))
+				if( s1.charAt(i)==s2.charAt(check) && check<s2.length())
 				{
 					check++;
 				}
@@ -107,10 +109,14 @@ public class StringClone {
 	
 	
 	
-	
-	
-	
-	
+	public static String intend(String s,int spaces)
+	{
+		for(int i=0;i<spaces;i++)
+		{
+			s=" "+s;
+		}
+		return s;
+	}
 	
 	
 	
