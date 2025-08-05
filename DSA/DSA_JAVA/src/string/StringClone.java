@@ -3,10 +3,15 @@ package string;
 public class StringClone {
 	
 	public static void main(String[] args) {
-		String s1 = "Aditya";
-		String s2 = "aditya";
-		System.out.println(compareTo(s1, s2));
-		System.out.println(endWith("asdfsdf","df"));
+//		String s1 = "Aditya";
+//		String s2 = "aditya";
+//		System.out.println(compareTo(s1, s2));
+//		System.out.println(endWith("asdfsdf","df"));
+		
+		String s1 = "ssass";
+		String s2 = "as";
+		
+		System.out.println(contains(s1,s2));
 	}
 
 	public int length(String s)
@@ -70,5 +75,63 @@ public class StringClone {
 		}
 		return false;
 	}
+	
+	
+	public static boolean contains(String s1,String s2)
+	{
+		int check =0;
+		if(s1.length()>s2.length())
+		{
+			for(int i=0;i<s1.length();i++)
+			{
+				if(check<s2.length() && s1.charAt(i)==s2.charAt(check))
+				{
+					check++;
+				}
+				else
+				{
+					if(check==s2.length())
+					{
+						return true;
+					}
+					else if(s2.charAt(0)==s1.charAt(i))
+					{
+						i--;
+					}
+					check=0;
+				}
+			}
+		}
+		return check==s2.length();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
