@@ -13,7 +13,9 @@ public class StringClone {
 //		
 //		System.out.println(contains(s1,s2));
 		
-		System.out.println(intend("Anurath", 10));
+//		System.out.println(intend("Anurath", 10));
+		
+		System.out.println(indexOf("Anurath", 't'));
 	}
 
 	public int length(String s)
@@ -118,7 +120,17 @@ public class StringClone {
 		return s;
 	}
 	
-	
+	public static int indexOf(String s,char ch)
+	{
+		for(int i=0;i<s.length();i++)
+		{
+			if(s.charAt(i)==ch)
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
 	
 	
 	
