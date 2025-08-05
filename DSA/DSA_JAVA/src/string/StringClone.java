@@ -8,14 +8,14 @@ public class StringClone {
 //		System.out.println(compareTo(s1, s2));
 //		System.out.println(endWith("asdfsdf","df"));
 //		
-//		String s1 = "ssass";
-//		String s2 = "as";
+		String s1 = "ssass";
+		String s2 = "sas";
 //		
-//		System.out.println(contains(s1,s2));
+		System.out.println(contains(s1,s2));
 		
 //		System.out.println(intend("Anurath", 10));
 		
-		System.out.println(indexOf("Anurath", 't'));
+//		System.out.println(indexOf("Anurath", 't'));
 	}
 
 	public int length(String s)
@@ -88,7 +88,7 @@ public class StringClone {
 		{
 			for(int i=0;i<s1.length();i++)
 			{
-				if( s1.charAt(i)==s2.charAt(check) && check<s2.length())
+				if(check<s2.length() && s1.charAt(i)==s2.charAt(check))
 				{
 					check++;
 				}
