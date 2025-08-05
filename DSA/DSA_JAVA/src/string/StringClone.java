@@ -134,20 +134,65 @@ public class StringClone {
 	
 	
 	
+	public static boolean isBlack(String s)
+	{
+		for(int i=0;i<s.length();i++)
+		{
+			if(s.charAt(i)!=' ')
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public static boolean isEmpty(String s)
+	{
+		if(s.length()>0)
+		{
+			return false;
+		}
+		return true;
+	}
 	
 	
 	
+	public static int lasIndexOf(String s,char ch)
+	{
+		for(int i=s.length()-1;i>=0;i--)
+		{
+			if(s.charAt(i)==ch)
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
 	
+	public static String repeat(String s,int cnt)
+	{
+		for(int i=0;i<cnt;i++)
+		{
+			s+=s;
+		}
+		return s;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public static String replace(String s,char old,char naya)
+	{
+		String ans = "";
+		for(int i=0;i<s.length();i++)
+		{
+			if(s.charAt(i)==old)
+			{
+				ans+=naya;
+			}
+			else {
+				ans+=s.charAt(i);
+			}
+		}
+		return ans;
+	}
 	
 	
 	
