@@ -1,7 +1,6 @@
 import java.util.Scanner;
 class LeetCodePalindromeNumber
 {
-	//Qpalindrome
 	public static void main(String[] args)
 	{
 		int num = 12321;
