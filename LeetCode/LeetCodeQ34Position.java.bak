@@ -1,8 +1,6 @@
 class LeetCodeQ34Position {
     public int[] searchRange(int[] nums, int target) {
-
         int[] arr = new int[2];
-
         byte idx = 0;
         boolean flag = true;
         for(byte i=0;i<nums.length;i++)
