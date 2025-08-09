@@ -4,7 +4,7 @@ public class LongestSubSequence {
 	
 	public static void main(String[] args)
 	{
-		System.out.println(longestSubSequence("ADDITYA","ADIADITA"));
+		System.out.println(longestSubSequence("AVDEFG","ABGABCD"));
 	}
 
 	public static String longestSubSequence(String s1,String s2)
