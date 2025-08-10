@@ -6,7 +6,7 @@ public class SplitByChar {
 
 	public static void main(String[] args) {
 		String str = "I love India.";
-		System.out.println(Arrays.toString(split(str, 'o')));
+		System.out.println(Arrays.toString(split(str, 'I')));
 	}
 	
 	public static String[] split(String str, char ch)
