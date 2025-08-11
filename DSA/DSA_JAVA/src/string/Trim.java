@@ -4,31 +4,37 @@ public class Trim {
 
 	
 	public static void main(String[] args) {
-		
+		String name = "  anurath   ";
+		System.out.println(trim(name));
 	}
 	
 	public static String trim(String str)
 	{
 		String ans = "";
-		boolean start = false;
-		boolean end = true;
 		
-		int j=0;
-		for(int i=0;i<str.length()-j;i++)
+		boolean start = false;
+		boolean end = false;
+		
+		for(int i=0,j=str.length();i<j;i++)
 		{
 			if(str.charAt(i)!=' '&& !start)
 			{
-				start=true;
+				start = true;
 			}
-			else if(start)
+			if(start)
 			{
 				ans+=str.charAt(i);
 			}
 			
-			if(end && str.charAt(str.length()-1-j)==' ')
+			if(str.charAt(j-1)==' ' && !end)
 			{
-				
+				j--;
+			}
+			else {
+				end=true;
 			}
 		}
+		System.out.println(ans.length());
+		return ans;
 	}
 }
