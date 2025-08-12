@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class HacherRank_Anagram_Solution {
-	//Q4
+
     static boolean isAnagram(String a, String b) {
         if(a.length()==b.length())
         {
