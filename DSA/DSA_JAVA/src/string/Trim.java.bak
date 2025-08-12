@@ -2,7 +2,7 @@ package string;
 
 public class Trim {
 
-	//In single loop
+	
 	public static void main(String[] args) {
 		String name = "anurath";
 		System.out.println(trim(name));
