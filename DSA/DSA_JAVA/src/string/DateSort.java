@@ -22,72 +22,71 @@ public class DateSort {
 			String day=""+dates[i].charAt(0)+dates[i].charAt(1);
 			
 			String mon = ""+dates[i].charAt(3)+dates[i].charAt(4)+dates[i].charAt(5);
-			
 			String year = ""+dates[i].charAt(7)+dates[i].charAt(8)+dates[i].charAt(9)+dates[i].charAt(10);
-			switch(mon)
-			{
-			 case "Jan":
+		switch(month(mon))
+		{
+			 case 249:
 			 {
 				 temp+="01";
 				 break;
 			 }
-			 case "Feb":
+			 case 265:
 			 {
 				 temp+="02";
 				 break;
 			 }
-			 case "Mar":
+			 case 288:
 			 {
 				 temp+="03";
 				 break;
 			 }
-			 case "Apr":
+			 case 291:
 			 {
 				 temp+="04";
 				 break;
 			 }
-			 case "May":
+			 case 295:
 			 {
 				 temp+="05";
 				 break;
 			 }
-			 case "Jun":
+			 case 301:
 			 {
 				 temp+="06";
 				 break;
 			 }
-			 case "Jul":
+			 case 299:
 			 {
 				 temp+="07";
 				 break;
 			 }
-			 case "Aug":
+			 case 285:
 			 {
 				 temp+="08";
 				 break;
 			 }
-			 case "Sep":
+			 case 296:
 			 {
 				 temp+="09";
 				 break;
 			 }
-			 case "Oct":
+			 case 294:
 			 {
 				 temp+="10";
 				 break;
 			 }
 			 
-			 case "Nov":
+			 case 307:
 			 {
 				 temp+="11";
 				 break;
 			 }
-			 case "Dec":
+			 case 268:
 			 {
 				 temp+="12";
 				 break;
 			 }
-			}
+		}
 			temp=mon+day;
 			
 			temp = year+temp;
@@ -98,6 +97,16 @@ public class DateSort {
 		System.out.println(Arrays.toString(arr));
 		
 		return null;
+	}
+	
+	public static int month(String mon)
+	{
+		int sum=0;
+		for(int i=0;i<mon.length();i++)
+		{
+			sum+=mon.charAt(i);
+		}
+		return sum;
 	}
 	
 	public static int[] sortDates(int[] dates,int[] ref)
