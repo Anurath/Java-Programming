@@ -21,7 +21,7 @@ public class DateSort {
 			
 			String day=""+dates[i].charAt(0)+dates[i].charAt(1);
 			
-			String mon = ""+dates[i].charAt(2)+dates[i].charAt(3);
+			String mon = ""+dates[i].charAt(3)+dates[i].charAt(4)+dates[i].charAt(5);
 			
 			String year = ""+dates[i].charAt(7)+dates[i].charAt(8)+dates[i].charAt(9)+dates[i].charAt(10);
 			switch(mon)
@@ -92,6 +92,8 @@ public class DateSort {
 			
 			temp = year+temp;
 			arr[i]=Integer.parseInt(temp);
+			
+			
 		}
 		System.out.println(Arrays.toString(arr));
 		
