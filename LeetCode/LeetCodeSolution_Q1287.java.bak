@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1287{
-	//Q1287
     public int findSpecialInteger(int[] arr) {
         int[] count = new int[arr.length];
 
