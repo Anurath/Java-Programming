@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1299{
-	//Q1299
     public int[] replaceElements(int[] arr) {
         int[] ans = new int[arr.length];
 
