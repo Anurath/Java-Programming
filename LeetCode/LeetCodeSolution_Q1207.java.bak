@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1207{
-	//Q1207
     public boolean uniqueOccurrences(int[] arr) {
         int[] count = new int[arr.length];
 
