@@ -54,7 +54,7 @@ public class PlayList {
 			System.out.println("PlayList is Empty!");
 		}
 	}
-	
+	//Song addition
 	public boolean addSong(String name,String singer,String duration,String writer,String movie)
 	{
 		if(cnt<cap)
