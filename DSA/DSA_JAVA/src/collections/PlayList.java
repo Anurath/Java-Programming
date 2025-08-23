@@ -77,6 +77,7 @@ public class PlayList {
 		return false;
 	}
 	
+	//Remove a song
 	public boolean removeSong(String name,String movie)
 	{
 		if(cnt!=0)
@@ -111,6 +112,10 @@ public class PlayList {
 		}
 			System.out.println("PlayList is empty!");
 			return false;
-		
+	}
+	
+	public void playNext(String name,String movie)
+	{
+		//
 	}
 }
