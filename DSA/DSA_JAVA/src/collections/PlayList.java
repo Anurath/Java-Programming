@@ -116,6 +116,14 @@ public class PlayList {
 	
 	public void playNext(String name,String movie)
 	{
-		//
+		int i=0;
+		for(;i<cnt;i++)
+			if(songs[i].getName()==name && songs[i].getMovie() == movie)
+				break;
+		if(i!=cnt)
+		{
+			
+		}
+		
 	}
 }
