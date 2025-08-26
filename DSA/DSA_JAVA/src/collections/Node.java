@@ -17,16 +17,16 @@ public class Node {
 	
 	public Node(Object o)
 	{
-		val = 0;
+		val = o;
 		currRef = this;
 	}
 	
-	public Node nextRef()
+	public Node next()
 	{
 		return nextRef;
 	}
 	
-	public Node preRef()
+	public Node previous()
 	{
 		return this;
 	}
