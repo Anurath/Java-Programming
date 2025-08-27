@@ -13,11 +13,8 @@ public class LinkedListDriver {
 		LinkedList l2 = new LinkedList();
 		l2.addNode(20);
 		l2.addNode(40);
-		l2.addNode(60);
 		
-		LinkedList ans=  l1.removeAll(l2);
-		
-		ans.iterate();
+		System.out.println(l1.containsAll(l2));
 		
 		
 	}

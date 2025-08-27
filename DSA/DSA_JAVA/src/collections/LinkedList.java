@@ -155,27 +155,65 @@ public class LinkedList {
 		return "[]";
 	}
 	
-	public LinkedList removeAll(LinkedList ref)
-	{		
-		LinkedList newList = new LinkedList();
+	public void removeAll(LinkedList ref)
+	{
 		Node head = getHead();
 		Node head1 = ref.getHead();
-		while(head!=null)
+		while(head1!=null)
 		{
-			int n1 = (Integer)head.val;
-			while(head1!=null)
+			int n1 = (Integer)head1.val;
+			while(head!=null)
 			{
-				int n2 = (Integer)head1.val;
+				int n2 = (Integer)head.val;
 				if(n1==n2)
 				{
-					newList.addNode(n1);
+					this.removeNode(n1);
 				}
-				head1 = head1.nextRef;
+				head = head.nextRef;
 			}
-			head = head.nextRef;
-			head1 = ref.getHead();
+			head1 = head1.nextRef;
+			head = ref.getHead();
 		}
-		return newList;
 	}
 	
+	public void addList(LinkedList ref)
+	{
+		Node head = ref.getHead();
+		
+		while(head!=null)
+		{
+			this.addNode(head.val);
+			head = head.nextRef;
+		}
+	}
+	
+	public boolean containsAll(LinkedList ref)
+	{
+		Node head = getHead();
+		Node head1 = ref.getHead();
+		
+		while(head1!=null)
+		{
+			boolean flag = false;
+			int n1 = (Integer)head1.val;
+			
+			while(head!=null)
+			{
+				int n2 = (Integer)head.val;
+				if(n1==n2)
+				{
+					flag = true;
+					break;
+				}
+				head = head.nextRef;
+			}
+			if(flag)
+			{
+				return false;
+			}
+			head1 = head1.nextRef;
+			head = ref.getHead();
+		}
+		return true;
+	}
 }
