@@ -1,13 +1,18 @@
-package practiceArea;
+package collections;
 
 public class Node {
 
 	Object val;
 	
 	Node preRef;
-	Node nextRef;
 	
-	private Node() {}
+	Node nextRef;
+
+	
+	private Node()
+	{
+		//No arguments constructor
+	}
 	
 	public Node(Object o)
 	{
@@ -26,11 +31,11 @@ public class Node {
 	
 	public boolean hasNext()
 	{
-		return nextRef==null;
+		return nextRef!=null;
 	}
 	
-	public boolean hasPrevious()
+	public boolean hasPrevios()
 	{
-		return preRef==null;
+		return preRef!=null;
 	}
 }
