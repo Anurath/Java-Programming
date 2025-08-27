@@ -1,4 +1,4 @@
-package practiceArea;
+package collections;
 
 public class LinkedList {
 
@@ -108,6 +108,7 @@ public class LinkedList {
 			head = null;
 			return true;
 		}
+		size--;
 		return false;
 	}
 	
@@ -125,8 +126,56 @@ public class LinkedList {
 			head = new Node(val);
 			bhagwan = head;
 		}
+		size++;
 		return true;
 	}
 	
+	public void clearAll()
+	{
+		head = null;
+		bhagwan = null;
+	}
+	
+	public String toString()
+	{
+		if(head!=null)
+		{
+			StringBuffer sb = new StringBuffer();
+			Node head = getHead();
+			sb = sb.append("[");
+			while(head!=null)
+			{
+				sb = sb.append(" "+head.val+",");
+				head = head.nextRef;
+			}
+			sb.deleteCharAt(sb.length()-1);
+			sb.append("]");
+			return new String(sb);
+		}
+		return "[]";
+	}
+	
+	public LinkedList removeAll(LinkedList ref)
+	{		
+		LinkedList newList = new LinkedList();
+		Node head = getHead();
+		Node head1 = ref.getHead();
+		while(head!=null)
+		{
+			int n1 = (Integer)head.val;
+			while(head1!=null)
+			{
+				int n2 = (Integer)head1.val;
+				if(n1==n2)
+				{
+					newList.addNode(n1);
+				}
+				head1 = head1.nextRef;
+			}
+			head = head.nextRef;
+			head1 = ref.getHead();
+		}
+		return newList;
+	}
 	
 }

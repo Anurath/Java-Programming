@@ -1,4 +1,4 @@
-package practiceArea;
+package collections;
 
 public class Node {
 

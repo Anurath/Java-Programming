@@ -1,4 +1,4 @@
-package practiceArea;
+package collections;
 
 public class LinkedListDriver {
 
@@ -8,11 +8,17 @@ public class LinkedListDriver {
 		l1.addNode(20);
 		l1.addNode(30);
 		l1.addNode(40);
-		l1.addNode(50);
-		l1.addNode(60);
 	
-		l1.addFirst(100);
 		
-		l1.iterate();
+		LinkedList l2 = new LinkedList();
+		l2.addNode(20);
+		l2.addNode(40);
+		l2.addNode(60);
+		
+		LinkedList ans=  l1.removeAll(l2);
+		
+		ans.iterate();
+		
+		
 	}
 }
