@@ -1,6 +1,4 @@
 class LeetCodeSolution_Q1323{
-
-	//Q1323
     public int maximum69Number (int num) {
         int newNum=0;
         boolean flag=true;
