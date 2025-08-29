@@ -157,7 +157,6 @@ public class LinkedList {
 	
 	public void removeAll(LinkedList ref)
 	{
-		Node head = getHead();
 		Node head1 = ref.getHead();
 		while(head1!=null)
 		{
@@ -167,12 +166,10 @@ public class LinkedList {
 				int n2 = (Integer)head.val;
 				if(n1==n2)
 				{
-					this.removeNode(n1);
+					removeNode(n1);
 				}
-				head = head.nextRef;
 			}
 			head1 = head1.nextRef;
-			head = ref.getHead();
 		}
 	}
 	
@@ -182,7 +179,7 @@ public class LinkedList {
 		
 		while(head!=null)
 		{
-			this.addNode(head.val);
+			addNode(head.val);
 			head = head.nextRef;
 		}
 	}

@@ -1,11 +1,11 @@
 package collections;
 
-public class LinkedList {
+public class ZLinkedList {
 
 	Node head;
 	Node bhagwan;
 	
-	public LinkedList(){}
+	public ZLinkedList(){}
 	
 	public boolean addVal(Object o)
 	{

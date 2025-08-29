@@ -1,6 +1,6 @@
 package collections;
 
-public class Node {
+public class ZNode {
 
 	Object val;
 	
@@ -9,12 +9,12 @@ public class Node {
 	Node nextRef;
 
 	
-	private Node()
+	private ZNode()
 	{
 		//No arguments constructor
 	}
 	
-	public Node(Object o)
+	public ZNode(Object o)
 	{
 		val = o;
 	}

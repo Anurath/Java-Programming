@@ -1,9 +1,9 @@
 package collections;
 
-public class LinkedListDriver {
+public class ZLinkedListDriver {
 
 	public static void main(String[] args) {
-		LinkedList l1 = new LinkedList();
+		ZLinkedList l1 = new ZLinkedList();
 		
 		l1.addVal(10);
 		l1.addVal(20);
