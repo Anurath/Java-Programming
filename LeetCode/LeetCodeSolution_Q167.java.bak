@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q167{
-	//Q167
     public int[] twoSum(int[] numbers, int target) {
         int[] ans = new int[2];
         for(int i=0;i<numbers.length;i++)
