@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1539{
-	//Q1539
     public int findKthPositive(int[] arr, int k) {
         int misNum = 1,cnt=0,i=0;
 		while(i<arr.length)
