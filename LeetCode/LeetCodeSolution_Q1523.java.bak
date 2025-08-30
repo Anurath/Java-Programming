@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1523{
-	//Q1523
     public int countOdds(int low, int high) {
         int cnt=0;
         if(low%2==0)
