@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3038{
-	//Q3038
     public int maxOperations(int[] nums) {
        int[] ans = new int[nums.length/2];
 
