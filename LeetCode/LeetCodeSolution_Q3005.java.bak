@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3005{
-	//Q3005
     public int maxFrequencyElements(int[] nums) {
         int[] count = new int[nums.length];
 
