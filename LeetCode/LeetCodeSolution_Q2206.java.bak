@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2206{
-	//Q.2206
     public boolean divideArray(int[] nums) {
         int[] count = new int[nums.length];
         for(int i=0;i<nums.length;i++)
