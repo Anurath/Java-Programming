@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q896{
-	//Q896
     public boolean isMonotonic(int[] nums) {
         int incCnt=0,decCnt=incCnt;
 
