@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q412 {
-	//Q.412
     public List<String> fizzBuzz(int n) {
         List<String> list = new ArrayList<>();
 
