@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1446 {
-	//Q1446
     public int maxPower(String s) {
         int max = 0;
         int cnt =1;
