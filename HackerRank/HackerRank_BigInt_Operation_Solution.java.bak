@@ -6,7 +6,6 @@ import java.util.regex.*;
 
 public class HackerRank_BigInt_Operation_Solution {
 
-	//Q12
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
