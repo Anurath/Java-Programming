@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1455 {
-	//Q1455
     public int isPrefixOfWord(String sentence, String searchWord) {
         String[] str = sentence.split(" ");
         
