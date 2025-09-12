@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q14{
-	//Q14
     public String longestCommonPrefix(String[] strs) {
         String temp =strs[0];
         String ans="";
