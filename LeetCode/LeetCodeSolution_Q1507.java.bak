@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1507 {
-	//Q1507
     public static String reformatDate(String date) {
         String[] str = date.split(" ");
         String ans = str[2];
