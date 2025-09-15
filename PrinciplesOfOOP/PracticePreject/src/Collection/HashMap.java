@@ -1,7 +1,5 @@
 package Collection;
 
-import hashset.LinkedList;
-
 public class HashMap {
 
 	private int size = 16;

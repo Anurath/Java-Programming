@@ -1,7 +1,5 @@
 package Collection;
 
-import hashset.Node;
-
 public class LinkedList {
 
 	Node head;
