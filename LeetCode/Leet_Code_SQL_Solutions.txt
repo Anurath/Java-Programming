@@ -1,0 +1,46 @@
+Q.619
+
+
+SELECT MAX(num) AS num
+FROM (
+    SELECT num
+    FROM MyNumbers
+    GROUP BY num
+    HAVING COUNT(num) = 1
+) AS single_numbers;
+
+
+
+
+Q.2356
+
+SELECT teacher_id,COUNT(DISTINCT subject_id) AS CNT
+FROM TEACHER
+GROUP BY teacher_id;
+
+
+
+Q.1683
+
+SELECT tweet_id
+FROM Tweets
+WHERE LENGTH(content)>15;
+
+
+
+Q.511
+
+SELECT player_id ,MIN(event_date) AS first_login
+FROM Activity
+GROUP BY player_id;
+
+Q.1873
+
+SELECT employee_id,
+       CASE 
+           WHEN MOD(employee_id,2) = 1 AND SUBSTR(name,1,1) != 'M' 
+           THEN salary 
+           ELSE 0 
+       END AS bonus
+FROM Employees
+ORDER BY employee_id;
