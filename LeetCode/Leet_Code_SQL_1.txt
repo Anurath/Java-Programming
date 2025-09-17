@@ -1,0 +1,50 @@
+Q.176
+
+SELECT MAX(salary ) AS SecondHighestSalary 
+FROM Employee 
+WHERE salary <(SELECT MAX(salary ) FROM Employee );
+
+
+
+Q.178
+
+SELECT * FROM (
+    SELECT SCORE AS SCORE, 
+           DENSE_RANK() OVER (ORDER BY SCORE DESC) AS "RANK" 
+    FROM Scores
+) AS ranked_table;
+
+
+
+
+Q.184
+
+SELECT Department,Employee,SALARY
+FROM (
+    SELECT D.NAME AS Department ,E.NAME AS Employee ,E.salary,RANK() OVER(PARTITION BY E.departmentId ORDER BY salary DESC) AS R1
+    FROM Employee E INNER JOIN Department D
+    ON E.departmentId = D.ID
+)AS ranked_employees
+WHERE R1 = 1;
+
+
+Q.1068
+
+SELECT P.product_name,S.year,S.price
+FROM SALES S INNER JOIN PRODUCT P
+ON S.product_id = P.product_id;
+
+
+
+
+Q.607
+
+SELECT S.name
+FROM SalesPerson S
+WHERE S.sales_id NOT IN (
+    SELECT DISTINCT O.sales_id
+    FROM Orders O
+    INNER JOIN Company C ON O.com_id = C.com_id
+    WHERE C.name = 'RED'
+    AND O.sales_id IS NOT NULL
+);
