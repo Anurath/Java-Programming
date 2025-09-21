@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3115 {
-	//Q3115
     public int maximumPrimeDifference(int[] nums) {
         int s = -1;
         int e = -1;
