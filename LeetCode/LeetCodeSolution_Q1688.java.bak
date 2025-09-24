@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1688 {
-	//Q.1688
     public int numberOfMatches(int n) {
         if(n==1)
         {
