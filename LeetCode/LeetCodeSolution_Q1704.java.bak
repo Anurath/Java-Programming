@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1704 {
-	//Q.1704
     public boolean halvesAreAlike(String s) {
         int mid = s.length()/2;
         int cnt=0;
