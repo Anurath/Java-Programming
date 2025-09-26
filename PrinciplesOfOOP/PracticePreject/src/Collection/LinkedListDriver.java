@@ -13,5 +13,7 @@ public class LinkedListDriver {
 		l1.addVal(200);
 		
 		l1.iterate();
+		
+		l1.addVal(20);
 	}
 }
