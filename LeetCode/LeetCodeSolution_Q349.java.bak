@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q349 {
-	//Q.349
     public int[] intersection(int[] nums1, int[] nums2) {
        int[] ref = new int[nums2.length];
 
