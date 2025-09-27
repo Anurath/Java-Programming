@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3536 {
-	//Q.3536
     public int maxProduct(int n) {
         int max = 0;
         int secMax = 0;
