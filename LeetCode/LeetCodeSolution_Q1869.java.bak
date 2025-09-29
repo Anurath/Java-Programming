@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1869 {
-	//Q.1869
     public boolean checkZeroOnes(String s) {
         int maxOne = 0 , maxZero = 0,j=0,k=0;
 
