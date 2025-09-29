@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1848{
-	//Q.1848
     public int getMinDistance(int[] nums, int target, int start) {
         int idx = 0;
         int min = 2147483647;
