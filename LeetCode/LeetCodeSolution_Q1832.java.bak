@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1832 {
-	//Q.1832
     public boolean checkIfPangram(String sentence) {
         int cnt=0;
             int[] ref = new int[26];
