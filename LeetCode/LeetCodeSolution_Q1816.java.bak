@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1816 {
-	//Q.1816
     public String truncateSentence(String s, int k) {
         String ans = "";
         String[] ar = s.split(" ");
