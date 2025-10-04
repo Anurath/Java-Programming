@@ -1,6 +1,4 @@
 class LeetCodeSolution_Q1796 {
-
-	//Q.1796
     public int secondHighest(String s) {
         int max = -1;
         boolean flag = false;
