@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1979{
-	//Q.1979
     public int findGCD(int[] nums) {
         int max=0;
         int min=1000;
