@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1991{
-	//Q.1991
     public int findMiddleIndex(int[] nums) {
         int lSum =0,rSum=0;
         for(int j=0,k=0;j<nums.length;j++,k++)
