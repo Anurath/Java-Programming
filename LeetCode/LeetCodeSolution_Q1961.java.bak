@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1961{
-	//Q.1961
     public boolean isPrefixString(String s, String[] words) {
         String str = "";
         for(int i=0;i<words.length;i++)
