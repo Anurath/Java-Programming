@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q2000{
-	//Q.2000
     public String reversePrefix(String word, char ch) {
         String ans = "";
         int i=0;
