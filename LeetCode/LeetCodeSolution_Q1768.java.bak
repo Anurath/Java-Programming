@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1768 {
-	//Q.1768
     public String mergeAlternately(String word1, String word2) {
         String ans = "";
         
