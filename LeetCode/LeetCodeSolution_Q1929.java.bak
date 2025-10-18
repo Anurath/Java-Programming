@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1929{
-	//Q.1929
     public int[] getConcatenation(int[] nums) {
         int[] ans = new int[nums.length*2];
 
