@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1935 {
-	//Q.1935
     public int canBeTypedWords(String text, String brokenLetters) {
         char[] ch = brokenLetters.toCharArray();
         String[] arr = text.split(" ");
