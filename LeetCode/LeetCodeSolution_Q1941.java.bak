@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q1941 {
-	//Q.1941
     public boolean areOccurrencesEqual(String s) {
         int ref = 0;
 		boolean flag = true;
