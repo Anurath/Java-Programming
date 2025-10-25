@@ -1,5 +1,5 @@
 class LeetCodeSolution_Q409{
-	//Q409
+	//Q.409
     public int longestPalindrome(String s) {
         int oddMax = 0;
 		int evenSum=0;
