@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q3622 {
-	//Q.3622
     public boolean checkDivisibility(int n) {
         int sum = 0;
         int pro = 1;
