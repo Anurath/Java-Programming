@@ -1,5 +1,4 @@
 class LeetCodeSolution_Q345 {
-	//Q.345
     public String reverseVowels(String s) {
         char[] ch = s.toCharArray();
 
