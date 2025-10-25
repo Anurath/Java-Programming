@@ -1,5 +1,5 @@
 class LeetCodeSolution_Q509{
-	//Q509
+	//Q.509
     public int fib(int n) {
         int a=0,b=1,temp=0;
         if(n==1)
